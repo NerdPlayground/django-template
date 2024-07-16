@@ -4,7 +4,7 @@ This template is used to setup the base for your Django application. It comes wi
     - Python Decouple - which connects the environment variables to the application
     - Psycopg - PostgreSQL database adapter for Python
 - Configured settings for;
-    - Environment variables - SECRET_KEY, ADIM_SITE_URL and DEBUG
+    - Environment variables - SECRET_KEY, ADMIN_SITE_URL and DEBUG
     - Database
     - Templates
     - Static files
@@ -19,7 +19,7 @@ This template is used to setup the base for your Django application. It comes wi
     - Create the virtual environment; `virtualenv <virtual environment name>`
     - Activate the environment; `source <virtual environment name>/Scripts/activate`
     - To deactivate the environment; `deactivate`
-4. Add your environment variables with the following command - this will add SECRET_KEY, ADIM_SITE_URL and DEBUG in the .env file;
+4. Add your environment variables with the following command - this will add SECRET_KEY, ADMIN_SITE_URL and DEBUG in the .env file;
     ```PowerShell
     python -c "import secrets; write_to=open('./application/.env','w',encoding='utf-8'); write_to.write('SECRET_KEY={0}\nADMIN_SITE_URL={1}\nDEBUG=True\n'.format(secrets.token_urlsafe(),secrets.token_urlsafe()))"
     ```
